@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+	<title><%= @item[:title] %> — Джеф Раскин «Интерфейс»</title>
+    <link rel="stylesheet" type="text/css" href="/css/book.css" media="screen">
+  </head>
+  <body>
+   <div>
+		<header class="header">
+		<p><a href="index.html">Оглавление</a></p>
+		<p class="visit"><%= @item[:title] %></p>
+		<label><input type="text" id="d" maxlength="60" value="Поиск по книге"/><img src="img/search.png" alt="Поиск"/></label>
+		</header>
+
+		<div class="content-wrapper">
+			<acticle class="content">
+			<%= yield %>
+			</acticle>
+		</div>
+		
+		<div class="footer">
+		<small>Ничьи права не защищены. Сайт сделан в 2011 году просто так.</small>
+		<label><input type="text" id="d" maxlength="60" value="Поиск по книге"/><img src="img/search.png" alt="Поиск"/></label>
+		</div>
+ </div>
+  </body>
+</html>

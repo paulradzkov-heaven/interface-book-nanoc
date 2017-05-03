@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+	<title><%= @item[:title] %></title>
+    <link rel="stylesheet" type="text/css" href="/css/book.css" media="screen">
+    <meta name="generator" content="nanoc 3.2.2">
+  </head>
+  <body class="index">
+    <%= yield %>
+	<div class="footer">
+		<small>Ничьи права не защищены. Сайт сделан в 2011 году просто так.</small>
+		<label><input type="text" id="d" maxlength="60" value="Поиск по книге"/><img src="img/search.png" alt="Поиск"/></label>
+	</div>
+  </body>
+</html>
